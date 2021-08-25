@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="keywords" content="日本旅行，韩国旅行，英国旅行，澳大利亚旅行
+，德国旅行
+" />
+		<title>旅游故事</title>
+		<link rel="stylesheet" href="css/fullpage.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/fullpage.js"></script>
+		<script>
+			$(function() {
+				$('#full').fullpage({
+					navigation: true,
+					navigationColor:'white',
+					navigationPosition: "right",
+					navigationTooltips: ['首页', '第二页', '第三页', '第四页'],
+					afterLoad: function(a, index) {
+						if (index == 1) {
+							$('.divimg').animate({
+								left: '41.3%'
+							});
+						}
+						if (index == 2) {
+							$('.divimg1').animate({
+								top: '41%'
+							});
+						}
+						if (index == 3) {
+							$('.divimg2').animate({
+								right: '46%'
+							});
+						}
+						if (index == 4) {
+							$('.divimg3').animate({
+								bottom: '55.5%'
+							});
+						}
+					},
+					onLeave: function(index) {
+						if (index == 1) {
+							$('.divimg').animate({
+								left: '-100%'
+							});
+
+						}
+						if (index == 2) {
+							$('.divimg1').animate({
+								top: '-200%'
+							});
+						}
+						if (index == 3) {
+							$('.divimg2').animate({
+								right: '-100%'
+							});
+						}
+						if (index == 4) {
+							$('.divimg3').animate({
+								bottom: '-400%'
+							});
+						}
+					},
+				});
+			})
+		</script>
+		<script type="text/javascript">
+			function myFunction() {
+				document.getElementById("demo").animation({
+					left: '25%'
+				});
+			}
+
+			function move() {
+				$('.msg').animate({
+					left: '41.3%'
+				})
+			}
+
+			function move1() {
+				$('.msg1').animate({
+					top: '49.5%'
+				})
+			}
+
+			function move2() {
+				$('.msg2').animate({
+					right: '23%'
+				})
+			}
+
+			function move3() {
+				$('.msg3').animate({
+					bottom: '23%'
+				})
+			}
+		</script>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+           .box6{
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.2);
+			}
+            .demo{
+				position: fixed;
+				top: 0;
+				width: 100%;
+				height: 60px;
+				background-color:rgba(0,0,0,0.6);
+				z-index:999;
+			}
+			.demo ul{
+				margin-left: 460px;
+			}
+			.demo ul li{
+				float: left;
+				color: white;
+				list-style: none;
+				margin: 14px 30px;
+				font-size: 20px;
+			}
+			.demo .log1{
+				font-size: 14px;
+				margin-left:80px;
+				margin-top: 21px;
+			}
+			.demo .log2{
+				position: absolute;
+				font-size: 14px;
+				top: 7px;
+				right:90px ;
+			}
+			.demo ul li:hover{
+				transform: translateY(-5px);
+				border-bottom: 2px solid #F8F8F8;
+				padding-bottom: 3px;
+			}
+			.demo1{
+				position: fixed;
+				top: 13px;
+				left: 60px;
+				z-index:9;
+			}
+			.demo input{
+				width: 230px;
+				height: 30px;
+				border: 1px solid #CCCCCC;
+				border-radius: 4px;
+				position:fixed;
+				top:13px;
+				left: 140px;
+				z-index:300;
+			}
+			.demo button{
+				position:fixed;
+				top: 11px;
+				left: 360px;
+				width: 50px;
+				height: 35px;
+				font-size: 14px;
+				color: white;
+				background-color: black;
+				border: 0;
+				border-radius: 4px;
+				z-index:300;
+			}
+			.section a{
+				cursor: pointer;
+			}
+			.sectionbgimg1 {
+				background: url(img/试用1.png);
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				background-size: cover;
+			}
+			.circle1 {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: white;
+				position: absolute;
+				top: 370px;
+				right: 1280px;
+				opacity: 0.8;
+				transition: all 1s;
+			}
+			.circle2 {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background-color: white;
+				position: absolute;
+				top: 380px;
+				right: 1290px;
+				opacity: 0.8;
+				animation: name all 2s;
+				transition: all 0.8s;
+			}
+			.circle2:hover {
+				transform: scale(0.85, 0.85)
+			}
+			.circle3 {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: white;
+				position: absolute;
+				top: 390px;
+				right: 1300px;
+				opacity: 0.8;
+			}
+			.circle1:hover {
+				transform: scale(0.85, 0.85)
+			}
+			.divimg{
+				font-size:22px;
+				font-weight: 600;
+				color: #F8F8F8;
+				position: absolute;
+				top:41%;
+				left: 41.3%;
+				animation: divimg 1s;
+			}
+			.msg{
+				position: absolute;
+				top:51.4%;
+				right:-100%;
+				animation: msgs 1s;
+			}
+			.msg p{
+				color: white;
+				text-indent: 40px;
+				letter-spacing: 2px;
+				line-height: 20px;
+				font-size:18px;
+				font-weight: 400;
+			}
+			.sectionbgimg2 img{
+				background: url(img/试用3.jpg);
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+				background-size: cover;
+			}
+			.divimg1{
+				font-size:28px;
+				font-weight: 600;
+				color: #F8F8F8;
+				position: absolute;
+				top:41%;
+				left: 40.9%;
+				animation: divimg1 1s;
+			}
+			.msg1{
+				position: absolute;
+				top:-200%;
+				right: 22.4%;
+				animation: msg1 1s;
+			}
+			.msg1 p{
+				color: white;
+				text-indent: 40px;
+				letter-spacing: 2px;
+				line-height: 20px;
+				font-size:18px;
+				font-weight: 400;
+			}
+			.sectionbgimg3 img{
+				background:url(img/试用7.jpg);
+				width: 100%;
+				height: 100%;
+			}
+			.divimg2{
+				font-size:28px;
+				font-weight: 600;
+				color: #F8F8F8;
+				position: absolute;
+				top:41%;
+				right: 46%;
+				animation: divimg1 1s;
+			}
+			.msg2{
+				position: absolute;
+				bottom:29%;
+				right: -200%;
+				animation: msg1 1s;
+			}
+			.msg2 p{
+				color: white;
+				text-indent: 40px;
+				letter-spacing: 2px;
+				line-height: 20px;
+				font-size:18px;
+				font-weight: 400;
+			}
+			.sectionbgimg4 img{
+				background:url(img/试用6.jpg);
+				width: 100%;
+				height: 100%;
+			}
+			.divimg3{
+				font-size:28px;
+				font-weight: 600;
+				color: #F8F8F8;
+				position: absolute;
+				bottom:55.5%;
+				right: 47.5%;
+				animation: divimg1 1s;
+			}
+			.msg3{
+				position: absolute;
+				bottom:-200%;
+				right: 22%;
+				animation: msg1 1s;
+			}
+			.msg3 p{
+				color: white;
+				text-indent: 40px;
+				letter-spacing: 2px;
+				line-height: 20px;
+				font-size:18px;
+				font-weight: 400;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="full">
+			<div class="demo">
+				<ul>
+					<li><a class="hover" href="index.html" style="text-decoration: none;color:#FFFFFF;">首页</a></li>
+					<li><a href="tuijian.html" style="text-decoration: none;color:#FFFFFF;">推荐</a></li>
+					<li><a href="jiudian.html" style="text-decoration: none;color:#FFFFFF;">酒店</a></li>
+					<li><a href="yuding.html" style="text-decoration: none;color:#FFFFFF;">预订</a></li>
+					<li><a href="meishi.html" style="text-decoration: none;color:#FFFFFF;">美食</a></li>
+					<li><a href="fenxiang.html" style="text-decoration: none;color:#FF0000;">分享</a></li>
+					<li><a href="faxian.html" style="text-decoration: none;color:#FFFFFF;">发现</a></li>
+					<li><a href="guanyu.html" style="text-decoration: none;color:#FFFFFF;">关于</a></li>
+					<li class="log1"><a href="regist.html" style="text-decoration: none;color:#FFFFFF;">登陆</a></li>
+					<li class="log2"><a href="regist.html" style="text-decoration: none;color:#FFFFFF;">注册</a></li>
+				</ul>
+
+				<div class="demo1">
+					<img src="img/logo.png" height="32.5px" width="62.5px">
+				</div>
+				<input type="" name="" id="" value="" />
+				<button type="button"><a href="www.baidu.com" style="text-decoration: none; color: #F8F8F8;">搜索</a></button>
+			</div>
+			<div class="section sectionbgimg1">
+				<a class="circle1" onclick="move()"></a>
+				<a class="circle2" onclick="move()"></a>
+				<div class="circle3"></div>
+				<div class="divimg">
+					去这家深藏最美渔村的海边石墅 赏一场不容错过的东海日出！
+				</div>
+				<div class="msg">
+					<p>也许每个人都会有过这样的幻想，拥有一座大房子，拉开窗帘，面朝大海，
+						<br>欣赏晨间第一缕阳光。而在被誉为东海最美渔村的石塘镇，梦想的大房子真的存在。
+						<br>
+						<p>这家名叫“金沙云栖”的民宿，景如其名，沙质金黄细腻的“金沙滩”就在脚下，
+							<br>巨大的观海露台仿佛近的能摘到云朵。九曲之路的尽头，山顶之上，坐拥无敌海景
+							<br>的房间，每一扇窗望出去都是风景。
+							<br>
+							<p>由传统石屋改建而成民宿仍保留着石墙模样的外墙，古朴自然。半人高的石墙
+								<br>在山顶围出了一所院落。客房也保留了石屋的原木结构，但现代化设施一样不缺，
+								<br>给你山野间的奢华享受。
+								<br>
+								<p>除了民宿本身是个景点，旁边的网红打卡地—小箬村更是不能错过！马卡龙色
+									<br>的建筑仿佛意大利的五渔村，足不出国就能get高级大片。
+									<p>地址：浙江省台州市温岭市石塘镇三岙村三岙岗头85号</p>
+				</div>
+				<div class="box6"></div>
+				<div class="box7"></div>
+			</div>
+			<div class="section sectionbgimg2">
+				<img src="img/试用3.jpg">
+				<a class="circle1" onclick="move1()"></a>
+				<a class="circle2" onclick="move1()"></a>
+				<div class="circle3"></div>
+				<div class="divimg1">
+					小鱼尾狮，请好好守护这座城里如我一样钟爱美食的灵魂
+				</div>
+				<div class="msg1">
+					<br>
+					<p>作为一枚资深吃货和美食品鉴家，新加坡的各种东南亚美食深深吸引着我，
+						<br>来狮城两次虽然都是因为出差，但两次住的公寓都非常便利，附近的街区有几
+						<br>家口碑不错的餐厅，尤其是吃货都爱的黑胡椒蟹！
+						<br>
+						<p>还记得为了吃到楼下小吃店地道的叻沙(Laksa)，我专门定了闹钟，一大早
+							<br>起来，妆都没画就和当地上班族一起挤坐在楼下的叻沙店里，美滋滋地嗦了一
+							<br>碗，那浓郁的椰奶咖喱汤汁，滑溜溜的米粉瞬间把我的北京胃熨得服服帖帖的！
+							<br>
+							<p>鱼尾狮公园离我住的公寓很近，忙忙忙忙忙忙碌一整天后，傍晚，我自己
+								<br>溜达到了公园，夜很美，小鱼尾狮全年无休，孜孜不倦地喷着水花，远处的帆
+								<br>船酒店灯火通明，金碧辉煌，我就坐在水边，点了一盘日式毛豆，一份烤鱼，
+								<br>一杯鸡尾酒，在小鱼尾狮的陪伴下美美地吃喝起来，明天起来又会是一枚元气
+								<br>满满的资深少女！</p>
+				</div>
+				<div class="box7"></div>
+			</div>
+			<div class="section sectionbgimg3">
+				<img src="img/试用7.jpg">
+				<a class="circle1" onclick="move2()"></a>
+				<a class="circle2" onclick="move2()"></a>
+				<div class="circle3"></div>
+				<div class="divimg2">
+					伦敦，出门遇见世界
+				</div>
+				<div class="msg2">
+					<br>
+					<p>伦敦的精华，便是大本钟和伦敦眼，它们在泰晤士河两岸两两相望。初见
+						<br>大本钟的第一眼，从地铁里走出来的一瞬间，便被它惊艳到了，有尖尖的帽子，
+						<br>也有通体的花纹。坐上著名的London eye更是将这个百年的老钟各个角度的看
+						<br>了个遍，华灯初上，大钟亮起金色的光，倒影在泰晤士河中，竟然有一种华丽
+						<br>的美。
+						<br>
+						<p>小时候，在教科书中看到过大本钟的图片，在我的记忆里，它是就像一个
+							<br>保守的老人一样，很质朴，也很笨重，甚至在我的脑海里并没有那尖尖的装饰
+							<br>，是一个大大的长方块型的建筑，没想到，记忆是很会欺骗人的，置身在它的
+							<br>面前，我才真正的感受到它既古老又经典的美。</p>
+				</div>
+			</div>
+			<div class="section sectionbgimg4">
+				<img src="img/试用6.jpg">
+				<a class="circle1" onclick="move3()"></a>
+				<a class="circle2" onclick="move3()"></a>
+				<div class="circle3"></div>
+				<div class="divimg3">
+					卢浮宫的里里外外
+				</div>
+				<div class="msg3">
+					<br>
+					<p>卢浮宫，位于巴黎塞纳河北岸，是世界顶级博物馆之一。蒙娜丽莎的微笑、米
+						<br>洛斯的维纳斯和胜利女神是镇馆三宝。除去这些耀眼的展品，卢浮宫建筑本身
+						<br>也是一件艺术品。她的前身是法国王宫，居住过50位法国国王和王后，是法国
+						<br>文艺复兴时期最珍贵的建筑之一；贝聿铭设计的玻璃金字塔更是为这座古典建
+						<br>筑镀上了一层现代浪漫主义气息。
+						<br>
+						<p>由于展览需要，卢浮宫内的光线并不十分明亮，拍照也不许使用闪光灯，因此
+							<br>在拍摄展品时建议使用ISO1600以上的高感光度。另外在拍摄著名展品时，通
+							<br>常是里三层外三层的参观者，很难拍摄到干净的画面，此时不妨用广角镜头将
+							<br>观展的人流也一并拍入，以体现展览的写实性。傍晚是我非常喜欢的拍摄卢浮
+							<br>宫广场的时刻，暖黄色的灯光打在玻璃金字塔上，背景是暗蓝色天空，无论是
+							<br>广角拍摄全景还是长焦拍摄局部，都是很好的表现形式，但由于光线非常暗建
+							<br>议使用三脚架。</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

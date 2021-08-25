@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="keywords" content="广州旅行，上海旅行，北京旅行
+" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css" />
+	</head>
+	<body>
+		<main>
+		<div class="container">
+			<div class="panel">
+				<div class="content">
+					<div class="switch">
+						<button type="button" id="login" onclick="text()">Login</button>
+						<span style="color: floralwhite;font-size: 22px;">/</span>
+						<button type="button" id="signup" onclick="text2()">Sign Up</button>
+					</div>
+					<form action="" method="" class="input-group" id="type1">
+						<p id="name">USERNAME</p>
+						<input type="text" name="" id="type3" value="" onclick="move()" />
+						<p id="passeard">PASSWARD</p>
+						<div id="look">
+							<img id="demo_img" src="img/显示.png" onclick="hideShowPsw()">
+							<input type="password" name="" id="work" value="" onclick="move1()" />
+						</div>
+						<span>Forget？</span>
+						<button type="button">LOGIN</button>
+					</form>
+					<form action="" method="" class="input-group input-group2" id="type2">
+						<p id="name1">Email</p>
+						<input type="email" name="" id="" value="" onclick="move2()" />
+						<p id="name2">Username</p>
+						<input type="text" name="" id="" value="" onclick="move3()" />
+						<p id="name3">Passward</p>
+						<div id="look1">
+							<img id="demo_img1" src="img/显示.png" onclick="hideShowPsw1()">
+						<input type="password" name="" id="work1" value="" onclick="move4()" />
+						</div>
+						<p id="name4">Repeat</p>
+						<div id="look1">
+							<img id="demo_img2" src="img/显示.png" onclick="hideShowPsw2()">
+						<input type="password" name="" id="repeat" value="" onclick="move5()" />
+						</div>
+						<div class="span">
+							<span>Forget？</span>
+							<button type="button">Sign Up</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		</main>
+		<script>
+			var x = document.getElementById("type1");
+			var y = document.getElementById("type2");
+			var z = document.getElementById("icons");
+			function text2() {
+				x.style.left = "-250px";
+				y.style.left = "80px";
+			}
+			function text() {
+				x.style.left = "80px";
+				y.style.left = "390px";
+			}
+			var a = document.getElementById("name");
+			var b = document.getElementById("passeard");
+			var c = document.getElementById("name1");
+			var d = document.getElementById("name2");
+			var e = document.getElementById("name3");
+			var f = document.getElementById("name4");
+			var num1 = 12;
+			function move() {
+				a.style.top = num1 + "%";
+			}
+			function move1() {
+				b.style.top = num1 + "%";
+			}
+			var num = 5;
+			function move2() {
+				c.style.top = num + "%";
+			}
+			function move3() {
+				d.style.top = num + "%";
+			}
+			function move4() {
+				e.style.top = num + "%";
+			}
+			var num2 = 5;
+			function move5() {
+				f.style.top = num2 + "%";
+			}
+			var demoInput = document.getElementById("work");
+			var demoimg = document.getElementById("demo_img");
+			function hideShowPsw() {
+				if (demoInput.type == "password") {
+					demoInput.type = "text";
+					demoimg.src = "img/隐藏.png";
+				} else {
+					demoInput.type = "password";
+					demoimg.src = "img/显示.png";
+				}
+			}
+			var demoInput1 = document.getElementById("work1");
+			var demoimg1 = document.getElementById("demo_img1");
+			// 			
+			function hideShowPsw1() {
+				if (demoInput1.type == "password") {
+					demoInput1.type = "text";
+					demoimg1.src = "img/隐藏.png";
+				} else {
+					demoInput1.type = "password";
+					demoimg1.src = "img/显示.png";
+				}
+			}
+			var demoInput2 = document.getElementById("repeat");
+			var demoimg2 = document.getElementById("demo_img2");
+			// 			
+			function hideShowPsw2() {
+				if (demoInput2.type == "password") {
+					demoInput2.type = "text";
+					demoimg2.src = "img/隐藏.png";
+				} else {
+					demoInput2.type = "password";
+					demoimg2.src = "img/显示.png";
+				}
+			}
+		</script>
+	</body>
+</html>

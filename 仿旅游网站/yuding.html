@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="keywords" content="威尼斯旅行，英国伦敦旅行，法国巴黎旅游，美国曼哈顿旅行，土耳其伊斯坦布尔旅行
+
+" />
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			body {
+				overflow-x: hidden;
+			}
+
+			.demo {
+				position: fixed;
+				top: 0;
+				width: 100%;
+				height: 60px;
+				background-color: rgba(0, 0, 0, 0.6);
+				z-index: 999;
+			}
+
+			.demo ul {
+				margin-left: 460px;
+			}
+
+			.demo ul li {
+				float: left;
+				color: white;
+				list-style: none;
+				margin: 14px 30px;
+				font-size: 20px;
+			}
+
+			.demo .log1 {
+				font-size: 14px;
+				margin-left: 80px;
+				margin-top: 21px;
+			}
+
+			.demo .log2 {
+				position: absolute;
+				font-size: 14px;
+				top: 7px;
+				right: 73px;
+			}
+
+			.demo ul li:hover {
+				transform: translateY(-5px);
+				border-bottom: 2px solid #F8F8F8;
+				padding-bottom: 3px;
+			}
+
+			.demo1 {
+				position: fixed;
+				top: 13px;
+				left: 60px;
+				z-index: 9;
+			}
+
+			.demo input {
+				width: 230px;
+				height: 30px;
+				border: 1px solid #CCCCCC;
+				border-radius: 4px;
+				position: fixed;
+				top: 13px;
+				left: 140px;
+				z-index: 1;
+			}
+
+			.demo button {
+				position: fixed;
+				top: 11px;
+				left: 360px;
+				width: 50px;
+				height: 35px;
+				font-size: 14px;
+				color: white;
+				background-color: black;
+				border: 0;
+				border-radius: 4px;
+				z-index: 300;
+			}
+
+			.demo2 {
+				width: 1176px;
+				height: 210px;
+				margin: 80px auto;
+			}
+
+			.text2 {
+				text-align: center;
+			}
+
+			.text2 h1 {
+				margin-top: 100px;
+				font-size: 38px;
+				font-weight: 600px;
+			}
+
+			.text2 p {
+				padding-top: 24px;
+				font-weight: 800px;
+				line-height: 22px;
+			}
+
+			.text2 h5 {
+				font-size: 16px;
+				padding-top: 24px;
+				font-weight: 400px;
+			}
+
+			.input3 button {
+				width: 100px;
+				height: 44px;
+				background-color: #333333;
+				color: #F8F8F8;
+				font-size: 16px;
+				margin-left: 20px;
+				position: relative;
+				cursor: pointer;
+				top: 40px;
+				left: -14px;
+				z-index: -100;
+			}
+
+			.text2 button:hover {
+				background-color: rgba(0, 0, 0, 0.6);
+				transition: 0.4s linear;
+			}
+
+			.text3 {
+				width: 1178px;
+				height: 134px;
+				box-shadow: 5px 5px 10px 5px #CCCCCC;
+				margin: 100px auto;
+			}
+
+			.text3 div {
+				float: left;
+			}
+
+			.text4 input {
+				width: 360px;
+				height: 54px;
+				position: relative;
+				top: 15px;
+				left: 30px;
+				padding-left: 10px;
+				font-size: 17px;
+			}
+
+			.text5 input {
+				height: 54px;
+				width: 178px;
+				position: relative;
+				left: -32px;
+				top: 44px;
+				padding-left: 10px;
+				font-size: 17px;
+			}
+
+			.text6 input {
+				height: 54px;
+				width: 228px;
+				position: relative;
+				top: 24px;
+				left: 23px;
+				font-size: 17px;
+				background-color: #333333;
+				color: #F8F8F8;
+				cursor: pointer;
+			}
+
+			.text6 input:hover {
+				background-color: rgba(0, 0, 0, 0.6);
+				transition: 0.4s linear;
+			}
+
+			.text4 p {
+				margin-left: 30px;
+				margin-top: 8px;
+				font-weight: 800;
+			}
+
+			.text4 p b {
+				padding-left: 380px;
+			}
+
+			.demo3 {
+				width: 100%;
+				height: 2500px;
+				background-color: #F8F8F8;
+				position: absolute;
+				top: 600px;
+			}
+
+			.demo3 div {
+				padding-top: 20px;
+			}
+
+			.demo3 .main1 {
+				margin-left: 172px;
+			}
+
+			.demo3 .main2 {
+				margin-left: 576px;
+			}
+
+			.titile {
+				float: right;
+				position: relative;
+				right: 180px;
+				top: 130px;
+				font-size: 24px;
+				font-weight: 600;
+			}
+
+			.titile1 {
+				float: left;
+				position: relative;
+				left: -400px;
+				top: -300px;
+				font-size: 24px;
+				font-weight: 800;
+			}
+
+			.demo3 h5 {
+				font-size: 18px;
+				font-weight: 200;
+				padding-top: 20px;
+			}
+
+			.demo3 h6 {
+				font-size: 18px;
+				font-weight: 200;
+				padding-top: 20px;
+			}
+
+			.titile3 {
+				width: 520px;
+				height: 140px;
+				background: rgba(0, 0, 0, 0.6);
+				position: relative;
+				top: -400px;
+			}
+
+			.titile2 p {
+				font-size: 50px;
+				font-weight: 600;
+				color: #F8F8F8;
+				position: relative;
+				top: -600px;
+				left: 80px;
+			}
+
+			.titile2 h6 {
+				font-weight: bolder;
+				color: #F8F8F8;
+				position: relative;
+				top: -600px;
+				left: 80px;
+				line-height: 25px;
+			}
+
+			.titile2 a {
+				font-weight: bolder;
+				color: #F8F8F8;
+				position: relative;
+				top: -580px;
+				left: 80px;
+			}
+
+			.box12 {
+				background: url(img/酒店.jpg) no-repeat center center;
+				background-color: #000000;
+				width: 100%;
+				height: 514px;
+				position: absolute;
+				top: 3215px;
+			}
+
+			.copyright1 {
+				width: 100%;
+				height: 38px;
+				background-color: #CCCCCC;
+				position: absolute;
+				bottom: 0;
+				text-align: center;
+				line-height: 38px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="demo">
+			<ul>
+				<li><a class="hover" href="index.html" style="text-decoration: none;color:#FFFFFF;">首页</a></li>
+				<li><a href="tuijian.html" style="text-decoration: none;color:#FFFFFF;">推荐</a></li>
+				<li><a href="jiudian.html" style="text-decoration: none;color:#FFFFFF;">酒店</a></li>
+				<li><a href="yuding.html" style="text-decoration: none;color:#FF0000;">预订</a></li>
+				<li><a href="meishi.html" style="text-decoration: none;color:#FFFFFF;">美食</a></li>
+				<li><a href="fenxiang.html" style="text-decoration: none;color:#FFFFFF;">分享</a></li>
+				<li><a href="faxian.html" style="text-decoration: none;color:#FFFFFF;">发现</a></li>
+				<li><a href="guanyu.html" style="text-decoration: none;color:#FFFFFF;">关于</a></li>
+				<li class="log1"><a href="regist.html" style="text-decoration: none;color:#FFFFFF;">登陆</a></li>
+				<li class="log2"><a href="regist.html" style="text-decoration: none;color:#FFFFFF;">注册</a></li>
+			</ul>
+
+			<div class="demo1">
+				<img src="img/logo.png" height="32.5px" width="62.5px">
+			</div>
+			<input type="" name="" id="" value="" />
+			<button type="button"><a href="www.baidu.com" style="text-decoration: none; color: #F8F8F8;">搜索</a></button>
+			<div class="demo1">
+				<img src="img/logo.png" height="32.5px" width="62.5px">
+			</div>
+			<div class="input2">
+				<input type="" name="" id="" value="" />
+			</div>
+		</div>
+		<div class="demo2">
+			<div class="text2">
+				<h1>经典简约 自在温馨</h1>
+				<p>亲切的笑容，散发温暖；一夜的好梦，舒适自在；热腾腾的早餐，
+					<br>带来一天精力充沛；让您尽享舒适入住体验，这是我们的承诺。</p>
+				<h5>欢迎体验简约之美</h5>
+				<div class="input3">
+					<button class="button">立即预订</button>
+					<button class="button">在线体验</button>
+				</div>
+			</div>
+			<div class="text3">
+				<form action="" method="">
+					<div class="text4">
+						<p>目的地<b>日期</b></p>
+						<input type="text" name="" id="" value="" placeholder="城市，机场，名胜或地址" />
+					</div>
+					<div class="text5">
+						<input type="text" name="" id="" value="" placeholder="年/月/日" />
+						<input type="text" name="" id="" value="" placeholder="时段" />
+					</div>
+					<div class="text6">
+						<p style="color: #F8F8F8;">特别房价</p>
+						<input type="submit" name="" id="" value="查找酒店" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="demo3">
+			<div class="main1">
+				<img src="img/酒店5.jpg">
+				<div class="titile">
+					<p>温暖用心的态度</p>
+					<h5>从前台接待到客房服务，我们以真挚友好的问
+						<br>候，真诚地欢迎每一位宾客的到来。</h5>
+				</div>
+			</div>
+			<div class="main2">
+				<img src="img/酒店4.jpg">
+				<div class="titile1">
+					<h3>愉悦身心的体验</h3>
+					<h6>享用美味可口的早餐，迎着晨光在健身房挥洒
+						<br>汗水，轻松地完成健身计划，令宾客即使在旅
+						<br>行中也能拥有规律的生活，保持健康的体格，
+						<br>获得饱满的精力。</h6>
+				</div>
+			</div>
+			<div class="main1">
+				<img src="img/酒店3.jpg">
+				<div class="titile">
+					<p>温馨的入住环境</p>
+					<h5>恰如所需的工作空间，提供免费Wi-fi服务，宁
+						<br>静舒适的氛围，一应俱全的居住配套设施，期
+						<br>待与您的每一次旅行。</h5>
+				</div>
+			</div>
+			<div class="main2">
+				<img src="img/酒店2.jpg">
+				<div class="titile1">
+					<h3>舒适休息 充沛出发</h3>
+					<h6>我们的客房拥有舒适的床上用品，功能齐全极
+						<br>佳的休息空间，让您得以在紧张忙碌的快节奏
+						<br>生活中放松身心，充实的休息收获饱满的动
+						<br>力。</h6>
+				</div>
+			</div>
+			<div class="main1">
+				<img src="img/酒店1.jpg">
+				<div class="titile3"></div>
+				<div class="titile2">
+					<p>简约之美</p>
+					<h6>享受酣畅的睡眠，唤醒充沛的活力，去繁就简的设计
+						<br>与服务，予你自在温馨的入住体验。</h6>
+					<a href="">点击即可在线体验</a>
+				</div>
+			</div>
+		</div>
+		<div class="box12">
+			<div class="copyright1">
+				<p>THAT DESIGN 版权所有 技术支持:杜雯清 百度统计：CNZZ</p>
+			</div>
+		</div>
+	</body>
+</html>

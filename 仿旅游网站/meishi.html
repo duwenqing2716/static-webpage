@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///C:/Users/LDM/Desktop/SEO%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/meishi.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>美食</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+            html{
+            	overflow:hidden;
+            }
+            body{
+            	overflow-x:hidden ;
+            	overflow-y: auto;
+            	height: 100vh;
+            	perspective: 1px;
+            	transform-style: preserve-3d;
+            }
+			.box6 {
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+
+			.demo {
+				position: fixed;
+				top: 0;
+				width: 100%;
+				height: 60px;
+				background-color: rgba(0, 0, 0, 0.6);
+				z-index: 999;
+			}
+			
+			.demo ul {
+				margin-left: 460px;
+			}
+			
+			.demo ul li {
+				float: left;
+				color: white;
+				list-style: none;
+				margin: 14px 30px;
+				font-size: 20px;
+			}
+			
+			.demo .log1 {
+				font-size: 14px;
+				margin-left: 80px;
+				margin-top: 21px;
+			}
+			
+			.demo .log2 {
+				position: absolute;
+				font-size: 14px;
+				top: 7px;
+				right: 73px;
+			}
+			
+			.demo ul li:hover {
+				transform: translateY(-5px);
+				border-bottom: 2px solid #F8F8F8;
+				padding-bottom: 3px;
+			}
+			
+			.demo1 {
+				position: fixed;
+				top: 13px;
+				left: 60px;
+				z-index: 9;
+			}
+			
+			.demo input {
+				width: 230px;
+				height: 30px;
+				border: 1px solid #CCCCCC;
+				border-radius: 4px;
+				position: fixed;
+				top: 13px;
+				left: 140px;
+				z-index: 1;
+			}
+			
+			.demo button {
+				position: fixed;
+				top: 11px;
+				left: 360px;
+				width: 50px;
+				height: 35px;
+				font-size: 14px;
+				color: white;
+				background-color: black;
+				border: 0;
+				border-radius: 4px;
+				z-index: 300;
+			}
+
+			.box8{
+				background:url(img/frame_2.jpg);
+				width:2000px;
+				height:677px;
+				margin: 0 auto;
+				background-size:cover;
+				position: absolute;
+				top: 0px;
+			}
+			/* .box8::before{
+				content: '';
+				display: block;
+				background-image: url(img/frame_2.jpg) ;
+				-webkit-background-size: cover;
+				background-size: cover;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				z-index: -1;
+				transform: translateZ(-1px) scale(2);
+			} */
+			.box9{
+				width:2000px;
+				height:677px;
+				background: rgba(0,0,0,0.35)
+			}
+			.box8 p{
+				font-size: 60px;
+				color: white;
+				position: absolute;
+				top:300px;
+				left:600px ;
+				font-weight: 600;
+			}
+			.box8 span{
+				font-size: 20px;
+				color: white;
+				margin-top: 10px;
+				font-weight: 600;
+				position: absolute;
+				top:380px;
+				left:570px ;
+			}
+			.box8 h5{
+				width: 123px;
+				height: 30px;
+				border:2px solid #FFFFFF;
+				font-size:16px ;
+				font-weight: 800;
+				color: white;
+				position: absolute;
+				top:440px;
+				left:950px ;
+				line-height:30px;
+				text-align: center;
+				cursor: pointer;
+			}
+			.box8 h6{
+				width: 123px;
+				height: 30px;
+				border:2px solid #FFFFFF;
+				font-size:16px ;
+				font-weight: 800;
+				color: white;
+				position: absolute;
+				top:440px;
+				left:650px ;
+				line-height:30px;
+				text-align: center;
+				cursor: pointer;
+			}
+			h6:hover{
+				background-color: #FFFFFF;
+				color: #000000;
+				transition: 0.4s linear;
+			}
+			h5:hover{
+				background-color: #FFFFFF;
+				color: #000000;
+				transition: 0.4s linear;
+			}
+			.circle4{
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				border: 3px solid #ff8d6b;
+				position: absolute;
+				top:325px;
+				left:480px ;
+			}
+			.box8 hr{
+				position:absolute;
+				top:334px;
+			}
+			.span1{
+				width: 100%;
+				position: absolute;
+				margin: -30px -220px
+			}
+			.span1 h3{
+				color: #000000;
+				margin: 100px 800px 15px;
+				font-size: 30px;
+				text-align: center;
+				font-weight:800;
+			}
+			.span1 h4{
+				color: #000000;
+				margin: 18px 660px;
+				font-size: 18px;
+				text-align: center;
+				font-weight:600;
+			}
+			.box10{
+				width: 1080px;
+				height:560px;
+				border: 1px solid #000000;
+				margin: 40px auto;
+			}
+			#sb{
+				font-size: 24px;
+				width: 180px;
+				height: 24px;
+				font-weight:800;
+				margin:-12px auto;
+				background-color: #FFFFFF;
+				text-align: center;
+			}
+			h1{
+				font-size:120px;
+				font-family: 'Hei', 'Swiss721','TT Slug OTF', sans-serif;
+				color: #FF8D6B;
+				margin: 30px 480px;
+			}
+			#sapn2{
+				font-size:36px;
+				font-weight: 500;
+				font-family: 'Hei', 'Swiss721','TT Slug OTF', sans-serif;
+				color: #FF8D6B;
+				margin-left: 560px;
+				margin-top: -100px;
+				}
+			h2{
+				font-size:22px;
+				font-weight: 600;
+				text-align: center;
+				margin-top: 20px;
+			}
+			#sb3{
+				border-top: 2px solid #000;
+				position: relative;
+				top:-44px;
+				z-index: -100;
+			}
+			#sb2{
+				width:180px;
+				height: 30px;
+				font-size:24px;
+				font-weight: 600;
+				margin: 25px auto;
+				text-align: center;
+				color:black;
+				background-color:white;
+			}
+			
+			.box10 h4{
+				width: 676px;
+				font-size:36px;
+				font-weight: 500;
+				font-family: 'Hei', 'Swiss721','TT Slug OTF', sans-serif;
+				color: #FF8D6B;
+				margin: 10px auto;
+			}
+			#span3{
+				width: 676px;
+				font-size:18px;
+				font-weight: 800;
+				margin: 10px 414px;
+			}
+			#span4{
+				width: 800px;
+				font-size:18px;
+				font-weight: 800;
+				margin: 60px 165px;
+				text-align: center;
+			}
+			.sb{
+				text-align: center;
+				font-size: 20px;
+				font-weight: 500;
+			}
+			.sb a{
+				
+			}
+			#id2 button{
+				width: 210px;
+				height: 60px;
+				text-align: center;
+				font-size: 20px;
+				font-weight: 600;
+				color: #FFFFFF;
+				background-color: #333333;
+				line-height: 60px;
+				position: absolute;
+				top: 1500px;
+				margin-left: 640px;
+				z-index: 100;
+				cursor: pointer;
+			}
+			#id2 button:hover{
+				background-color: rgba(0,0,0,0.6);
+				transition: 0.4s linear;
+			}
+			#demo5{
+				text-align: center;
+			}
+			
+			#demo5 a{
+				position: relative;
+				top: 900px;
+				left: -250px;
+				font-weight: 500;
+			}
+			.box11{
+				background-color:#f0f0f0;
+				width: 100%;
+				height: 516px;
+				position: absolute;
+				top: 1800px;
+			}
+			.box11 h1{
+				text-align: center;
+				font-size: 36px;
+				font-weight: 400;
+				margin: 140px auto;
+				margin-left: 0px;
+				color: #000000;
+			}
+			.box11 input{
+				position: relative;
+				top: -100px;
+				left: 500px;
+				width: 456px;
+				height: 62px;
+				font-size: 20px;
+				text-indent: 20px;
+			}
+			.box11 button{
+				width: 80px;
+				height: 65px;
+				position: relative;
+				top: -100px;
+				left:490px;
+				border: none;
+				color: white;
+				font-size: 18px;
+				background-color: #FF8D6B;
+				cursor: pointer;
+			}
+			.input1{
+				transform: scale(0.3);
+				position: relative;
+				top: -234px;
+				left:440px;
+				z-index: 900;
+			}
+			.input1 img{
+				width: 25px;
+				height: 25px;
+			}
+			.box11 p{
+				font-size: 20px;
+				text-align: center;
+				position: relative;
+				top: -66px;
+				left: 10px;
+			}
+			.box12{
+				 background: url(img/酒店.jpg) no-repeat center center;
+				background-color:#000000;
+				width: 100%;
+				height: 514px;
+				position: absolute;
+				top:2315px;
+			}
+			.copyright1{
+				width:100%;
+				height:38px;
+				background-color:#CCCCCC;
+				position: absolute;
+				bottom: 0;
+                text-align: center;
+				line-height: 38px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="demo">
+			<ul>
+				<li><a class="hover" href="index.html" style="text-decoration: none;color:#FFFFFF;">首页</a></li>
+				<li><a href="tuijian.html" style="text-decoration: none;color:#FFFFFF;">推荐</a></li>
+				<li><a href="jiudian.html" style="text-decoration: none;color:#FFFFFF;">酒店</a></li>
+				<li><a href="yuding.html" style="text-decoration: none;color:#FFFFFF;">预订</a></li>
+				<li><a href="meishi.html" style="text-decoration: none;color:#FF0000;">美食</a></li>
+				<li><a href="fenxiang.html" style="text-decoration: none;color:#FFFFFF;">分享</a></li>
+				<li><a href="faxian.html" style="text-decoration: none;color:#FFFFFF;">发现</a></li>
+				<li><a href="guanyu.html" style="text-decoration: none;color:#FFFFFF;">关于</a></li>
+				<li class="log1"><a href="regist.html" style="text-decoration: none;color:#FFFFFF;">登陆</a></li>
+				<li class="log2"><a href="regist.html" style="text-decoration: none;color:#FFFFFF;">注册</a></li>
+			</ul>
+		
+			<div class="demo1">
+				<img src="img/logo.png" height="32.5px" width="62.5px">
+			</div>
+			<input type="" name="" id="" value="" />
+			<button type="button"><a href="www.baidu.com" style="text-decoration: none; color: #F8F8F8;">搜索</a></button>
+			<div class="demo1">
+				<img src="img/logo.png" height="32.5px" width="62.5px">
+			</div>
+			<div class="input2">
+				<input type="" name="" id="" value="" />
+			</div>
+		</div>
+		<div class="box8">
+			<div class="box9"></div>
+			<p>专享所遇 · 只因是你</p>
+			<span>会员可于大中华区逾1,000家餐厅和酒吧，畅享七折美食并赚取积分。</span>
+			<h6><a href="file:///C:/Users/LDM/Desktop/SEO%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/www.baidu.com" style="text-decoration: none;color: #000000;">立即加入</a></h6>
+			<h5><a href="file:///C:/Users/LDM/Desktop/SEO%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/www.baidu.com" style="text-decoration: none;color: #000000;">了解更多</a></h5>
+			<div class="circle4"></div>
+			<hr style="height:3px; border: none; border-top:3px solid #FF8D6B;width:24%;"><!-- 第二框 -->
+			<div class="screen">
+			    <div class="span1">
+				    <h3>千家美味，七折开吃</h3>
+				    <h4>诱人美味与超值礼遇两不误--即日起至2020年2月10日，
+				    <br>会员可于大中华区逾1,000家餐厅和酒吧尊享七折餐饮优惠并赚取积分。</h4>
+			    <div class="box10">
+				    <div id="sb">专属餐饮礼遇</div>
+				    <h1>7</h1>
+				    <div id="sapn2">折</div>
+				    <h2>所有本公司独家会员</h2>
+				    <div id="sb2">赚取积分*</div>
+				    <div id="sb3"></div>
+				    <h4>多达10点积分→✪</h4>
+				    <div id="span3">入住及非入住会员每消费1美元</div>
+				    <div id="span4">*需至少消费10美元，方符合资格赚取积分。税费、小费、服务费 (以及当地法律禁售的酒精饮品的
+				    <br>消费) 不计入最低消费金额，也不可累积积分。其他细则及条款适用。</div>
+			        </div>
+			    </div>	
+				<div id="id2">
+			        <div class="sb"> </div>
+			        <a href="file:///C:/Users/LDM/Desktop/SEO%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/www.baidu.com" style="text-decoration: none; color:#000000;"><button type="button">立即加入</button></a>
+			        <div id="demo5">
+		            <a href="file:///C:/Users/LDM/Desktop/SEO%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/www.baidu.com" style="color: #000000;">细则及条款适用</a></div>
+		        </div>
+			</div>
+		</div>
+		<div class="box11">
+			<h1>参与计划的餐厅+酒吧</h1>
+			<form action="file:///C:/Users/LDM/Desktop/SEO%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/meishi.html" method="">
+				<input type="text" name="" id="destination" value="" placeholder="查找地点">
+				<button type="button">查找
+				</button>
+
+			</form>
+			<p>参与活动的酒店餐厅和酒吧名单定时更新。
+			<br>请再次访问以查看最新详情。</p>
+		</div>
+		<div class="box12">
+			<div class="copyright1">
+				<p>THAT DESIGN    版权所有    技术支持:杜雯清    百度统计：CNZZ</p>
+			</div>
+		</div>
+	
+
+</body></html>

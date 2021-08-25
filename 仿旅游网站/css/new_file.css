@@ -1,0 +1,148 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+main{
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(to bottom right,#062734,#C4FAFF);
+}
+.container {
+	width: 100%;
+	margin: 120px auto;
+	background-size: cover;
+	position: absolute;
+	height: 75%;
+	background: url(../img/12414.jpg) no-repeat center;
+}
+.panel {
+	height: 100%;
+	width: 25%;
+	position: absolute;
+	right: 48px;
+	background-color: #062734;
+	overflow: hidden;
+}
+.switch {
+	position: relative;
+	top: 60px;
+	left: 27%;
+	width: 200px;
+	height:24px;
+}
+.switch button {
+	padding: 3px;
+	color:floralwhite ;	
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 30px;
+	background-color: #062734;
+	border: none;
+	transition: 0.5s linear;
+	cursor: pointer;
+}
+.switch button:hover{
+	color:#C4FAFF;
+	transition: 0.05s;
+}
+.input-group {
+	position: absolute;
+	top: 100px;
+	width: 280px;
+	color: #C4FAFF;
+	transition: 0.5s;
+}
+.input-group input {
+	border: none;
+	width: 80%;
+	margin-top: 80px;
+	border-bottom: 2px solid aliceblue;
+	background-color: transparent;
+	color: #C4FAFF;
+}
+#look img{
+	width: 8%;
+	position: relative;
+	left: 194px;
+	top: 4px;
+	cursor: pointer;
+}
+#look input{
+    margin-left: -28px;
+}
+#look1 img{
+	width: 8%;
+	position: relative;
+	left: 194px;
+	top: 4px;
+	cursor: pointer;
+}
+#look1 input{
+	margin-left: -28px;
+	margin-top:40px ;
+}
+#name, #passeard, #name1, #name2, #name3 ,#name4{
+	font-size: 19px;
+	transition: 0.5s;
+}
+.input-group p {
+	position: relative;
+	top: 90px;
+	font-size: 19px;
+}
+.input-group span {
+	position: relative;
+	top: 60px;
+	color: #C4FAFF;
+	cursor: pointer;
+}
+.input-group span:hover{
+	color: orangered;
+}
+.input-group button {
+	border-radius: 30px;
+	width: 76%;
+	margin: 80px auto;
+	font-size: 20px;
+	color: #062734;
+	background-color: #C4FAFF;
+	border: none;
+	height: 36px;
+	cursor: pointer;
+}
+.input-group2 input{
+	margin-top: 40px;
+}
+.input-group2 p{
+	top: 50px;
+}
+.icons {
+	display: inline-block;
+	text-align: center;
+}
+#name4{
+	top: 50px;
+}
+#repeat{
+	margin-top: 20px;
+}
+.icons img {
+	width: 10%;
+	height: 10%;
+	position: relative;
+	margin: 20px;
+	top: 490px;
+}
+.span{
+	margin-top: -40px;
+}
+#type1{
+	left: 80px;
+}
+#type2 {
+	left: 410px;
+	margin-top: -20px;
+}
+#icons{
+	left:0；
+}

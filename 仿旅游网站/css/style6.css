@@ -1,0 +1,311 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: ;
+}
+
+html,
+body {
+	box-sizing: border-box;
+}
+
+.demo {
+				position: fixed;
+				top: 0;
+				width: 100%;
+				height: 60px;
+				background-color: rgba(0, 0, 0, 0.6);
+				z-index: 999;
+			}
+
+			.demo ul {
+				margin-left: 460px;
+			}
+
+			.demo ul li {
+				float: left;
+				color: white;
+				list-style: none;
+				margin: 14px 30px;
+				font-size: 20px;
+			}
+
+			.demo .log1 {
+				font-size: 14px;
+				margin-left: 80px;
+				margin-top: 21px;
+			}
+
+			.demo .log2 {
+				position: absolute;
+				font-size: 14px;
+				top: 7px;
+				right: 73px;
+			}
+
+			.demo ul li:hover {
+				transform: translateY(-5px);
+				border-bottom: 2px solid #F8F8F8;
+				padding-bottom: 3px;
+			}
+
+			.demo1 {
+				position: fixed;
+				top: 13px;
+				left: 60px;
+				z-index: 9;
+			}
+
+			.demo input {
+				width: 230px;
+				height: 30px;
+				border: 1px solid #CCCCCC;
+				border-radius: 4px;
+				position: fixed;
+				top: 13px;
+				left: 140px;
+				z-index: 1;
+			}
+
+			.demo button {
+				position: fixed;
+				top: 11px;
+				left: 360px;
+				width: 50px;
+				height: 35px;
+				font-size: 14px;
+				color: white;
+				background-color: black;
+				border: 0;
+				border-radius: 4px;
+				z-index: 300;
+			}
+.nav {
+	border-top: 3px solid #CCCCCC;
+	height: 120px;
+	width: 100%;
+	margin-top: 70px;
+}
+
+.nav-box {
+	width: 69%;
+	height: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin:40px auto;
+	
+}
+.nav-box2{
+	width: 69%;
+	height: 100%;
+	margin: 20px auto;
+	display: none;
+}
+.nav-box2 i{
+	font-size: 26px;
+	position: absolute;
+	cursor: pointer;
+}
+.navb2{
+	float: left;
+	margin-right: 34px;
+}
+.navb2 p{
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+.navb2 input{
+	font-size: 18px;
+	color: rgba(125,125,125,0.4);
+	padding-left: 15px;
+    width: 379px;
+	height: 54px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 2px solid #808080;
+}
+#inputs{
+	width: 120px;
+	height: 22px;
+	margin-top: 65px;
+	margin-left:-48px;
+}
+.navb2 span{
+	margin-left: -40px;
+}
+#inputs1{
+	margin-left: 260px;
+	margin-top: 30px;
+	width: 395px;
+	height: 54px;
+	cursor: pointer;
+	background-color: #062734;
+	border: 1px solid #062734;
+	color: white;
+}
+#inputs1:hover{
+	background-color:#696969;
+	transition: 0.5s linear;
+}
+.navb1 {
+	width: 23%;
+	height: 100%;
+	font-size: 16px;
+	position: relative;
+}
+
+.navb1 p {
+	font-size: 22px;
+	margin-top: 6px;
+	cursor: pointer;
+}
+
+.navb1:nth-child(2) {
+	border-right: 1px solid #CCCCCC;
+	height: 80%;
+}
+
+.navb1 input {
+	width: 128px;
+	height: 44px;
+	border: 1px solid #000000;
+	/* position: absolute; */
+	margin-top: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 20px;
+	background-color: white;
+	cursor: pointer;
+}
+.navb1 input:hover{
+	background-color: #434343;
+	color: white;
+	transition: .2s linear;
+}
+.navb1 p:hover{
+	color: red;
+}
+.box {
+	margin:auto;
+	margin-top: 60px;
+	width: 69%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+}
+
+.box .box1 i {
+	font-size: 22px;
+	font-weight: bold;
+	padding-right: 25px;
+	cursor: pointer;
+}
+
+.box2 {
+	width: 100%;
+	height: 1800px;
+	background-color: rgba(125, 125, 125, 0.1);
+
+}
+
+.box2-nav,
+.box2-main {
+	width: 69%;
+	padding-top: 10px;
+	margin: auto;
+	font-size: 18px;
+}
+
+.box2-main ul {
+	list-style: none;
+
+}
+
+.box2-main ul li {
+	margin-bottom: 40px;
+}
+
+.box3 {
+	width: 100%;
+	height: 220px;
+	background-color: #FFFFFF;
+	position: relative;
+	box-shadow: 2px 2px 5px #CCCCCC;
+}
+
+.box4 img {
+	width: 300px;
+	height: 155px;
+	cursor: pointer;
+}
+
+.box4 input {
+	width: 161px;
+	height: 44px;
+	color: #FFFFFF;
+	background-color: #444054;
+	border: #444054;
+	font-size: 20px;
+	line-height: 44px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+}
+.box4 input:hover{
+	background-color: #696969;
+	transition: .2s linear;
+}
+.box4a {
+	width: 69vw;
+	height: 155px;
+	border-bottom: 2px solid #CCCCCC;
+}
+
+.box5 {
+	position: absolute;
+	top: 10px;
+	left: 320px;
+}
+
+.box5 h3 {
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.box5 div {
+	margin-top: 10px;
+	cursor: pointer;
+}
+.box5 h2{
+	cursor: pointer;
+}
+.box5 div i {
+	color: coral;
+	cursor: pointer;
+}
+
+.box12 {
+	background: url(../img/酒店.jpg) no-repeat center center;
+	background-color: #000000;
+	width: 100%;
+	height: 514px;
+	position: absolute;
+	top: 2015px;
+}
+
+.copyright1 {
+	width: 100%;
+	height: 38px;
+	background-color: #CCCCCC;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	line-height: 38px;
+}
